@@ -20,17 +20,25 @@
 
     </style>
 
-    <header>
-        <div class="logo">Delicious Recipe</div>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Recipe">Recipes</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="nav-container">
+      <div class="logo">Delicious Recipe</div>
+      <button class="menu-btn" id="menuToggle" onclick="toggleMenu()">☰</button>
+  
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Recipe">Recipe</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+
+      
 
     <div class="hero">
         <h1>Welcome to our Recipe Collection!</h1>
@@ -226,5 +234,26 @@
         &copy; 2025 Delicious Recipe. All rights reserved.
     </footer>
 
+
+    <script>
+        function toggleMenu() {
+          const menu = document.getElementById("navLinks");
+          const btn = document.getElementById("menuToggle");
+      
+          menu.classList.toggle("show");
+      
+          
+          if (menu.classList.contains("show")) {
+            btn.innerHTML = "✖";
+          } else {
+            btn.innerHTML = "☰";
+          }
+        }
+      </script>
+      
+
+    
+
+      
 </body>
 </html>

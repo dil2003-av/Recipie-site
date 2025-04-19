@@ -100,3 +100,41 @@ ol > li::before {
   content: counter(item) ".";
   margin-right: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  #card-container {
+    width: 90%;
+    height: auto;
+  }
+
+  #recipe-image {
+    height: 250px;
+  }
+
+  #card-title,
+  #details,
+  #card-items,
+  #method {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .card-item-title {
+    font-size: 16px;
+  }
+}
+/* Make image responsive */
+#card-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  #card-container img {
+    height: auto;
+    max-width: 100%;
+  }
+}

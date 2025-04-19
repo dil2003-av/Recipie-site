@@ -52,3 +52,63 @@ li {
     font-size: 14px;
     margin: 5px 0;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-card {
+        width: 90%;  /* Make cards take up more width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .recipe-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.3em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .recipe-card {
+        width: 100%;  /* Full width for smaller screens */
+    }
+
+    .search-container input {
+        width: 80%;  /* Make search bar more responsive */
+        padding: 8px;
+    }
+
+    .search-container button {
+        padding: 8px;
+    }
+}

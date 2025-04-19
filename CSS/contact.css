@@ -30,3 +30,38 @@
 .contact-table button:hover {
     background-color: #45a049;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-table td {
+        padding: 12px;
+    }
+
+    .contact-table input,
+    .contact-table textarea {
+        padding: 12px;
+    }
+
+    .contact-table button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-table td {
+        padding: 8px;
+        font-size: 14px;  /* Make text size smaller for mobile */
+    }
+
+    .contact-table input,
+    .contact-table textarea {
+        font-size: 14px;  /* Smaller font size for input fields */
+        padding: 10px;
+    }
+
+    .contact-table button {
+        font-size: 16px;  /* Increase button text size */
+        padding: 12px 0;
+    }
+}
